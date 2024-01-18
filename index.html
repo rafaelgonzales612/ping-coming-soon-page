@@ -25,29 +25,35 @@
 
   <body>
     <main>
-      <h1 class="title">Ping.</h1>
-      <h2 class="subtitle">
-        <span class="fw-regular">We are launching</span> soon!
-      </h2>
-      <p>Subscribe and get notified</p>
-      <form action="" class="notify-form">
-        <label for="notify-input"></label>
-        <input
-          name="notify-input"
-          class="notify-input"
-          type="email"
-          placeholder="Your email address..."
-          required
+      <div class="container">
+        <h1 class="title">Ping.</h1>
+        <h2 class="subtitle">
+          <span class="fw-regular">We are launching</span> soon!
+        </h2>
+        <p>Subscribe and get notified</p>
+        <form action="" class="notify-form">
+          <label for="notify-input"></label>
+          <input
+            name="notify-input"
+            class="notify-input"
+            type="email"
+            placeholder="Your email address..."
+            required
+          />
+          <input type="button" />
+          <button type="button" class="notify-button" id="notify-button">
+            Notify Me<span class="visually-hidden"> about Ping launching</span>
+          </button>
+        </form>
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="decorative dashboard"
         />
-        <input type="button" />
-        <button type="button" class="notify-button" id="notify-button">
-          Notify Me<span visually-hidden> about Ping launching</span>
-        </button>
-      </form>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-      &copy; Copyright Ping. All rights reserved.
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        &copy; Copyright Ping. All rights reserved.
+      </div>
     </main>
 
     <footer>
