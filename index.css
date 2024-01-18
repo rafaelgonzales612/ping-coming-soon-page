@@ -1,0 +1,52 @@
+/* === CSS RESET === */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+/* === VARIABLES === */
+:root {
+  /* COLORS */
+  --color-blue: hsl(223, 87%, 63%);
+  --color-paleblue: hsl(223, 100%, 88%);
+  --color-lightred: hsl(354, 100%, 66%);
+  --color-gray: hsl(0, 0%, 59%);
+  --color-verydarkblue: hsl(209, 33%, 12%);
+  /* FONTS */
+  --fw-thin: 300;
+  --fw-regular: 600;
+  --fw-bold: 700;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
