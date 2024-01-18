@@ -38,30 +38,51 @@
         </h1>
         <p class="subheading">Subscribe and get notified</p>
         <div class="notify-container">
-          <input
-            class="notify-input"
-            id="notify-input"
-            type="email"
-            placeholder="Type your email address..."
-            required
-          />
-          <p class="notify-error">Please provide a valid email address.</p>
-          <button type="button" class="notify-button" id="notify-button">
-            Notify Me<span class="visually-hidden"> about Ping launching</span>
-          </button>
+          <form>
+            <div class="notify-input-container">
+              <input
+                class="notify-input"
+                id="notify-input"
+                type="email"
+                placeholder="Type your email address..."
+                required
+              />
+              <p class="notify-error" id="notify-error-empty">
+                Whoops! Looks like you forgot to add your email.
+              </p>
+              <p class="notify-error" id="notify-error-incorrect">
+                Please provide a valid email address.
+              </p>
+              <p class="notify-valid" id="notify-valid">Valid email address!</p>
+            </div>
+            <div class="notify-button-container">
+              <button type="button" class="notify-button" id="notify-button">
+                Notify Me<span class="visually-hidden">
+                  about Ping launching</span
+                >
+              </button>
+            </div>
+          </form>
         </div>
         <img
           class="dashboard-img"
           src="./images/illustration-dashboard.png"
           alt="decorative dashboard"
         />
-        <div class="brands-logo-icon">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
+        <div class="brands-logo-container">
+          <a href="https://facebook.com/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
-        &copy; Copyright Ping. All rights reserved.
+        <footer>&copy; Copyright Ping. All rights reserved.</footer>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

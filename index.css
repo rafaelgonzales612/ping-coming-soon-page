@@ -35,6 +35,7 @@ textarea {
   --color-blue: hsl(223, 87%, 63%);
   --color-paleblue: hsl(223, 100%, 88%);
   --color-lightred: hsl(354, 100%, 66%);
+  --color-lightgreen: hsl(126, 100%, 66%);
   --color-gray: hsl(0, 0%, 59%);
   --color-verydarkblue: hsl(209, 33%, 12%);
   /* FONTS */
@@ -71,13 +72,93 @@ body {
 }
 
 .company-logo-container {
-  margin: 0px auto;
+  margin: 4rem auto;
   width: 86px;
   height: auto;
 }
 
 .heading {
-  font-size: 3.4rem;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.notify-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+}
+
+.notify-input {
+  width: 80%;
+  border: 1px solid var(--color-paleblue);
+  padding: 1rem 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+}
+
+.notify-error {
+  display: none;
+  font-style: italic;
+  color: var(--color-lightred);
+  font-size: 1.2rem;
+}
+
+.notify-valid {
+  display: none;
+  font-style: italic;
+  color: var(--color-lightgreen);
+  font-size: 1.2rem;
+}
+
+.notify-button {
+  width: 80%;
+  border: 1px solid var(--color-blue);
+  background-color: var(--color-blue);
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: var(--fw-regular);
+  color: #fff;
+  border-radius: 2rem;
+  margin: 1rem 0 6rem 0;
+}
+
+.notify-button:hover {
+  cursor: pointer;
+}
+
+.notify-button:active {
+  background-color: var(--color-paleblue);
+  border: 1px solid var(--color-paleblue);
+}
+
+.dashboard-img {
+  margin-bottom: 6rem;
+}
+
+.brands-logo-container {
+  margin-bottom: 4rem;
+}
+
+.fa-brands {
+  margin: 0 2rem;
+  color: var(--color-blue);
+}
+
+footer {
+  color: var(--color-gray);
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
 }
 
 .visually-hidden {
@@ -87,4 +168,40 @@ body {
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    min-width: 800px;
+  }
+
+  /* form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .notify-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+
+  .notify-button-container {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
 }
