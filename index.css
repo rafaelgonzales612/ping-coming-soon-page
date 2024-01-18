@@ -43,6 +43,43 @@ textarea {
   --fw-bold: 700;
 }
 
+/* === GENERAL STYLES === */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.fw-thin {
+  font-weight: var(--fw-thin);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.container {
+  max-width: 400px;
+  height: auto;
+  text-align: center;
+}
+
+.company-logo-container {
+  margin: 0px auto;
+  width: 86px;
+  height: auto;
+}
+
+.heading {
+  font-size: 3.4rem;
+}
+
 .visually-hidden {
   clip-path: inset(50%);
   height: 1px;
@@ -50,12 +87,4 @@ textarea {
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-}
-
-.attribution {
-  font-size: 1.1rem;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }

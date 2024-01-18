@@ -26,43 +26,42 @@
   <body>
     <main>
       <div class="container">
-        <h1 class="title">Ping.</h1>
-        <h2 class="subtitle">
-          <span class="fw-regular">We are launching</span> soon!
-        </h2>
-        <p>Subscribe and get notified</p>
-        <form action="" class="notify-form">
-          <label for="notify-input"></label>
+        <div class="company-logo-container">
+          <img
+            class="company-logo-img"
+            src="./images/logo.svg"
+            alt="Ping company logo"
+          />
+        </div>
+        <h1 class="heading">
+          <span class="fw-thin">We are launching</span> soon!
+        </h1>
+        <p class="subheading">Subscribe and get notified</p>
+        <div class="notify-container">
           <input
-            name="notify-input"
             class="notify-input"
+            id="notify-input"
             type="email"
-            placeholder="Your email address..."
+            placeholder="Type your email address..."
             required
           />
           <input type="button" />
           <button type="button" class="notify-button" id="notify-button">
             Notify Me<span class="visually-hidden"> about Ping launching</span>
           </button>
-        </form>
+        </div>
         <img
+          class="dashboard-img"
           src="./images/illustration-dashboard.png"
           alt="decorative dashboard"
         />
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
+        <div class="brands-logo-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
         &copy; Copyright Ping. All rights reserved.
       </div>
     </main>
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
   </body>
 </html>
